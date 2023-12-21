@@ -1,0 +1,100 @@
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-color: #f7ecde;
+}
+
+::selection{
+    background-color: #fec260;
+}
+
+.bookmark-header h2{
+    font-family: "Righteous", cursive;
+    font-weight: bold;
+    font-size: 50px;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+    /* font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+.bookmark-header h2::before{
+    content: "";
+    position: absolute;
+    background-color: #fec260;
+    height: 15px;
+    width: 25%;
+    bottom: 0;
+    z-index: -1;
+    transition: height 0.5s;
+}
+
+.bookmark-header h2:hover::before{
+    height: 40px;
+}
+
+.bookmark-form h3{
+    font-family: "Righteous", cursive;
+    padding: 30px 0;
+    border-top:2px dotted black ;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.in1{
+    border: 1px solid #ced4da;
+    outline-color: #fec260;
+}
+
+.btn1{
+    text-align: center;
+    padding: 20px 0;
+    border-bottom:2px dotted black ;
+}
+
+.btn1 button{
+    border: none;
+    background-color: #d1512d;
+    color: white;
+    padding: 10px 45px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.btn1 button:hover{
+    background-color: #ae4426;
+}
+
+.btn-visit{
+    border: none;
+    background-color: #9eb23b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.btn-delete{
+    border: none;
+    background-color: #d1512d;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.5s;
+}
+
+.btn-delete:hover{
+    background-color: #ae4426;
+}
+.btn-visit:hover{
+    background-color: #839625;
+}
+
+.modal-header span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
