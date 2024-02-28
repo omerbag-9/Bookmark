@@ -43,6 +43,9 @@ function showmodel(){
     btn1.setAttribute('data-bs-target' ,'#exampleModal')
 }
 
+
+
+
 function addBook(){
     if(websiteName.value =='' || websiteUrl.value==''){        
         showmodel()
@@ -54,4 +57,10 @@ function addBook(){
         addwebsite() 
     }
     console.log(websiteName.value)
+}
+
+function showmodel(){
+    let exampleModal = document.getElementById("exampleModal")
+    let modal = new bootstrap.Modal(exampleModal)
+    modal.show()
 }
