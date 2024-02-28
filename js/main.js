@@ -44,16 +44,11 @@ function showmodel(){
 }
 
 
-
-
 function addBook(){
-    if(websiteName.value =='' || websiteUrl.value==''){        
+    if(websiteName.value =='' || websiteUrl.value==''){
         showmodel()
     }
     else if(websiteName.value !='' && websiteUrl.value !=''){
-        var btn1=document.getElementById('show')
-        btn1.setAttribute('data-bs-toggle' ,'')
-        btn1.setAttribute('data-bs-target' ,'')
         addwebsite() 
     }
     console.log(websiteName.value)
@@ -63,4 +58,6 @@ function showmodel(){
     let exampleModal = document.getElementById("exampleModal")
     let modal = new bootstrap.Modal(exampleModal)
     modal.show()
+
+
 }
